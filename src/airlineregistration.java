@@ -1,4 +1,4 @@
-// Copyright Wintriss Technical Schools 2013
+
 import javax.swing.JOptionPane;
 
 /**
@@ -19,17 +19,19 @@ import javax.swing.JOptionPane;
  * Toolbox: main() method, JOptionPane.showInputDialog, variables
  * 
  **/
-public class airlineregistration { public static void main(String[] args) { 
- String name=JOptionPane.showInputDialog(null, "what's your first name?");
- String last=JOptionPane.showInputDialog(null,"what's your last name" );
- String place=JOptionPane.showInputDialog(null,"where is your destination?");
- String birth=JOptionPane.showInputDialog(null, "when is your birthday?");
-JOptionPane.showMessageDialog(null,last+"/"+name+"\n birth"  );
+public class airlineregistration {  
+	public static void main(String[] args) { 
+	String firstname = JOptionPane.showInputDialog(null, "WHAT IS YOUR  NAME ?");
+String lastname= JOptionPane.showInputDialog(null, "WHAT IS YOUR LAST NAME ?");
+String dob= JOptionPane.showInputDialog(null, "WHEN IS YOUR BIRTHDAY ?");
+String gender= JOptionPane.showInputDialog(null, "ARE YOU MALE OR FEMALE ?");
+String travel= JOptionPane.showInputDialog(null, "WHERE ARE TRAVELING TO ?"); 
+JOptionPane.showMessageDialog(null,lastname+"/"+firstname+" ("+dob+","+gender+")\n  Traveling to:"  +travel);
+
+
+
 }
 }
-
-
-
 
 
 
