@@ -26,7 +26,7 @@ public class scarymaze extends JPanel implements Runnable, MouseMotionListener {
 
 	scarymaze() throws Exception {
 		//1. make a maze image and drop it into your default package http://pixlr.com/editor/
-		maze = ImageIO.read(getClass().getResource("scarymaze.png"));
+		maze = ImageIO.read(getClass().getResource("scarymaze.jpg"));
 		//2. set the mouse pointer to the start of your maze using:
 // new Robot().mouseMove(xPosition, yPosition)
 		//new Robot(savbot).mousePress(buttons);
