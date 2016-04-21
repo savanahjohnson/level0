@@ -21,6 +21,7 @@ public class scarymaze extends JPanel implements Runnable, MouseMotionListener {
 	BufferedImage maze;
 	final int frameWidth = 800;
 	final int frameHeight = 600;
+	private int backgroundColor;
 
 	scarymaze() throws Exception {
 		//1. make a maze image and drop it into your default package http://pixlr.com/editor/
@@ -41,13 +42,13 @@ public class scarymaze extends JPanel implements Runnable, MouseMotionListener {
 		int mouseY = e.getY();
 		int mouseColor = maze.getRGB(mouseX, mouseY);
 		//4. print the mouseColor variable to see what color the mouse is touching
-System.out.println();
-		//5. make a variable to hold the background color. 
 
-		//6. if the mouse falls off the path (if it is on the background)
+	int	backgroundColor = -1;
 
 				// call the scare method
-		
+		if (mouseColor==-1) {scare();
+			
+		}
 		//10. if the mouse is on the end color
 			
 				// pop up a message to tell them they won
