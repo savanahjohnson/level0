@@ -1,6 +1,4 @@
 
-// Copyright Wintriss Technical Schools 2013
-import java.applet.AudioClip;
 import java.awt.Dimension;
 
 import java.awt.Graphics;
@@ -10,8 +8,8 @@ import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
-import javax.swing.JApplet;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -21,17 +19,19 @@ import javax.swing.SwingUtilities;
 public class scarymaze extends JPanel implements Runnable, MouseMotionListener {
 	
 	BufferedImage maze;
-	final int frameWidth = 600;
-	final int frameHeight = 400;
+	final int frameWidth = 800;
+	final int frameHeight = 600;
 
 	scarymaze() throws Exception {
 		//1. make a maze image and drop it into your default package http://pixlr.com/editor/
-		maze = ImageIO.read(getClass().getResource("scarymaze.jpg"));
+		maze = ImageIO.read(getClass().getResource("MAZE2.jpg"));
 		//2. set the mouse pointer to the start of your maze using:
 // new Robot().mouseMove(xPosition, yPosition)
+		new Robot().mouseMove(120,200);
 		//new Robot(savbot).mousePress(buttons);
 		//3. add a mouse motion listener using:
 // addMouseMotionListener(this)
+		addMouseMotionListener(this);
 		
 	}
 
@@ -41,15 +41,15 @@ public class scarymaze extends JPanel implements Runnable, MouseMotionListener {
 		int mouseY = e.getY();
 		int mouseColor = maze.getRGB(mouseX, mouseY);
 		//4. print the mouseColor variable to see what color the mouse is touching
-
+System.out.println();
 		//5. make a variable to hold the background color. 
 
 		//6. if the mouse falls off the path (if it is on the background)
-		
+
 				// call the scare method
 		
 		//10. if the mouse is on the end color
-				
+			
 				// pop up a message to tell them they won
 	}
 
