@@ -8,13 +8,14 @@ public class soundtrack {
 
 		// 1. Adjust this pop-up to find out what mood the user is in.
 		int userMood = JOptionPane.showOptionDialog(null, "how are you feeling right now", "Pop-up Title", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "not ok", "ok", "happy" }, null);
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "ehh", "ok", "happy" }, null);
 		
 		// 2. Their answer is stored in the userMood variable. Print it out.
 		JOptionPane.showMessageDialog(null,userMood);
 		
 		// 3. If they are in a stressed mood, use the playVideo method to play a calming song from YouTube.
  if (userMood==0){ 
+	 playVideo(String (https://www.youtube.com/watch?v=ugTaLEBu6g8));
 	
 }
 	

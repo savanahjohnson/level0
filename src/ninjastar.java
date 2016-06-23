@@ -1,4 +1,4 @@
-package ninjastar;
+
 
 import org.jointheleague.graphical.robot.Robot;
 import java.awt.Color;
